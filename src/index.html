@@ -10,40 +10,46 @@
 <body>
     <body class="bg-gray-100 overflow-x-hidden md:overflow-x-hidden">
    
-        <!--Navigation Bar-->
-      <nav  class=" top-0 left-0 bg-white w-full shadow  sticky z-10">
-        <div  class="container m-auto flex justify-between items-center text-gray-700">  
-            <h1 class="pl-8 py-4 text-xl font-bold"><span class="bg-amber-300 rounded-lg p-1">Sejal</span > Manmode</h1>
-    
-            <!--Toggle Button-->
-            <label class="inline-flex items-center md:ml-3.5 me-5 cursor-pointer">
+      <!--Navigation Bar-->
+      <nav class="lg:px-16 px-6 bg-white  flex flex-wrap items-center lg:py-0 py-2 fixed w-full z-10 border-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]">
+        <div class="flex-1 flex justify-between items-center">
+          <h1 class="pl-8 py-4 text-xl font-bold"><span class="bg-amber-300 rounded-lg p-1">Sejal</span > Manmode</h1>
+            <label class="inline-flex mr-12 md:mr-52 me-5 cursor-pointer ">
               <input type="checkbox" value="" class="sr-only peer" checked>
               <div class="relative w-11 h-6 bg-gray-200 rounded-full peer  peer-focus:ring-4 peer-focus:ring-red-300 dark:peer-focus:ring-red-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-red-600"></div>
-              
             </label>
-            <ul class="hidden md:flex items-center pr-10 text-base font-semibold cursor-pointer">
-              <a href="#home"> <li class="hover:bg-gray-200 py-4 lg:px-6 md:px-3">Home</li></a> 
-              <a href="#about">  <li class="hover:bg-gray-200 py-4 lg:px-6 md:px-3">About</li></a> 
-               <a href="#skills"> <li class="hover:bg-gray-200 py-4 lg:px-6 md:px-3">Skills</li></a>
-                <a href="#certificate"> <li class="hover:bg-gray-200 py-4 md:px-3 lg:px-6">Certificate</li></a>
-               <a href="#project"><li class="hover:bg-gray-200 py-4 lg:px-6 md:px-3">Projects</li></a> 
-              <a href="#contact"> <li class="hover:bg-gray-200 py-4 lg:px-6 md:px-3">Contact</li></a> 
+        </div>
+        
+        <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+          <svg class="fill-current text-gray-900 md:mr-10" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+            <title>menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+        <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+          <nav>
+            <ul class="text-xl text-center items-center gap-x-5 pt-4 md:gap-x-4 lg:text-lg lg:flex  lg:gap-10  lg:pt-0">
+              <li class="py-2 lg:py-0 font-semibold">
+                <a class="text-black hover:pb-1 hover:border-b-4 hover:border-yellow-400" href="#home">Home</a>
+              </li>
+              <li class="py-2 lg:py-0 font-semibold">
+                <a class="text-black hover:pb-1 hover:border-b-4 hover:border-yellow-400" href="#about">About</a>
+              </li>
+              <li class="py-2 lg:py-0 font-semibold">
+                <a class="text-black hover:pb-1 hover:border-b-4 hover:border-yellow-400" href="#skills">Skills</a>
+              </li>
+              <li class="py-2 lg:py-0 font-semibold">
+                <a class="text-black hover:pb-1 hover:border-b-4 hover:border-yellow-400" href="#certificate">Certification</a>
+              </li>
+              <li class="py-2 lg:py-0 font-semibold">
+                <a class="text-black hover:pb-1 hover:border-b-4 hover:border-yellow-400" href="#project">Projects</a>
+              </li>
+              <li class="py-2 lg:py-0 font-semibold">
+                <a class="text-black hover:pb-1 hover:border-b-4 hover:border-yellow-400" href="#contact">Contact</a>
+              </li>
             </ul>
-            <button class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none hover:bg-gray-200 group">
-                <div class="w-5 h-1 bg-gray-600 mb-1"></div>
-                <div class="w-5 h-1 bg-gray-600 mb-1"></div>
-                <div class="w-5 h-1 bg-gray-600 mb-1"></div>
-                <div class="absolute top-0 -right-full h-screen w-8/12 bg-white border opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300">
-                    <ul class="flex flex-col items-center w-full text-base cursor-pointer pt-10">
-                      <div><a href="#home"><li class="hover:bg-gray-200 py-4 px-6 ">Home</li></a></div>
-                        <a href="#about"> <li class="hover:bg-gray-200 py-4 px-6 ">About</li></a>
-                      <a href="#skills">  <li class="hover:bg-gray-200 py-4 px-6 ">Skills</li></a>
-                      <a href="#certificate">  <li class="hover:bg-gray-200 py-4 px-6 ">Certificate</li></a>
-                       <a href="#project"> <li class="hover:bg-gray-200 py-4 px-6 ">Projects</li></a>
-                       <a href="#contact"><li class="hover:bg-gray-200 py-4 px-6">Contact</li></a> 
-                    </ul>
-                </div>
-              </button>
+          </nav>
         </div>
       </nav>
       
@@ -52,12 +58,12 @@
             <div class="w-full sm:w-1/2  h-screen flex items-center justify-center flex-col bg-slate-700 ">
             <h2 class="text-4xl">Hey Everyone,I'm</h2>
             <h1 class="text-5xl">Sejal Manmode</h1>
-            <p class="text-xl">I'm a softwear engineer</p>
+            <p class="text-xl mt-2">I'm a softwear engineer</p>
             <div>
     
                 <!--Facebook-->
                 <a href="https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.facebook.com/&ved=2ahUKEwis4p_m-6uHAxXXzjgGHb8jDxUQFnoECBUQAQ&usg=AOvVaw2q27ov2cpCynr72DmuSqEz">
-                <button   class="rounded-full border-2 border-cyan-400   m-1 p-2 transition duration-500 hover:scale-110 hover:bg-cyan-400 "><svg class="h-10 w-10 text-cyan-500 hover:text-black "  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>  </button></a>
+                <button   class="rounded-full border-2 border-cyan-400 mt-5  m-1 p-2 transition duration-500 hover:scale-110 hover:bg-cyan-400 "><svg class="h-10 w-10 text-cyan-500 hover:text-black "  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>  </button></a>
     
                 <!--Linkedin-->
                 <a href="https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=https://in.linkedin.com/&ved=2ahUKEwiuuPT4-6uHAxV_nmMGHYjjDssQFnoECBQQAQ&usg=AOvVaw1HyOXdC-jXyHRjrwaB7Mnw">
@@ -73,17 +79,17 @@
             </div>
     
             <!--Sample CV-->
-            <a href="image/cv.jpg"><button class="rounded-3xl border-2 border-cyan-400 mt-2 p-2 text-xl  font-bold ease-in duration-300 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  hover:text-gray-800 hover:border-gray-800" >Download CV</button></a>
+            <a href="image/cv.jpg"><button class="rounded-3xl border-2 border-cyan-400 mt-5 p-2 text-xl  font-bold ease-in duration-300 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  hover:text-gray-800 hover:border-gray-800" >Download CV</button></a>
         </div>
     
         <!--Home Image-->
         <div class="w-full sm:w-1/2 h-screen flex items-center justify-center bg-slate-700 ">
-            <img class="overflow-hidden animate-border bg-white bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-[length:400%_400%] p-1 rounded-lg h-96 w-96  " src="image/3d-avatar-office-girl-illustration-png.png" alt="girl image">
+            <img class="animate-bounce rounded-lg h-96 w-96  " src="image/3d-avatar-office-girl-illustration-png.png" alt="girl image">
         </div>
           </header>
     
     <!--About Section-->
-      <section id="about" name="about" class=" w-full h-max lg:h-screen bg-slate-600 flex-col md:h-max sm:flex sm:flex-row">
+      <section id="about"  name="about" class=" w-full h-max lg:h-screen bg-slate-600 flex-col md:h-max sm:flex sm:flex-row">
     
         <!--About Image-->
         <div class="w-full sm:w-2/5 h-3/4 ">
@@ -96,7 +102,7 @@
             <P class="text-xl pt-5 pr-10 pb-5 ">Hello My name is sejal Manmode I am from nagpur. I have done my graduation in information technology from priyadarshini bhagwati college of engineering in 2024 with an overall CGPA 8 I have develope strong foundation in C, C++, HTML, CSS My Hobbies and area of interest include writing, dancing, cooking. I'm a curious learner, always exploring new technologies and methodologies to stay ahead of the curve."</P>
     
             <!--button-->
-            <a class="" href="image/certificate.jpeg"><button class="rounded-lg border mb-5 p-2 hover:bg-slate-900 hover:text-white  border-black text-black  font-bold  ">Read More</button></a>
+            <a class="" href="image/certificate.jpeg"><button class="rounded-lg border mb-5 p-2 md:mb-16 hover:bg-slate-900 hover:text-white  border-black text-black  font-bold  ">Read More</button></a>
         </div>
       </section>
     
@@ -104,9 +110,9 @@
     <section id="skills" class="w-full h-screen md:h-max md:pb-10 lg:h-screen bg-slate-700 ">
     
       <!--Skill Section Heading-->
-        <h1  class="font-bold text-3xl pt-20 sm:pt-14 place-items-center text-center text-white">My Skills</h1>
+        <h1  class="font-bold text-3xl pt-10 sm:pt-16 place-items-center text-center text-white ">My Skills</h1>
     
-        <div class="h-3/5 w-11/12 mt-12 lg:h-3/4 md:h-1/2 md:pb-5  md:w-4/6 md:mt-16 md:  lg:w-1/2 rounded-lg bg-black m-auto lg:mt-5 ">
+        <div class="h-[400px] w-11/12 mt-10   lg:h-3/4 md:h-1/2 md:pb-5  md:w-4/6 md:mt-12  lg:w-1/2 rounded-lg bg-black m-auto lg:mt-5 ">
     
             <!--Skill HTML-->
             <label for="html" class="pl-3 text-sm mb-2 sm:text-xl font-medium text-gray-900 dark:text-white inline-block pt-10 sm:pl-10 ">HTML</label>
@@ -139,49 +145,49 @@
             <label for="DBMS" class=" text-sm mb-2 sm:text-xl font-medium text-gray-900 dark:text-white inline pt-5 pl-5 ">70%</label><br>
     
             <!--Skill Java-->
-            <label for="Java" class="pl-3 text-sm mb-2 sm:text-xl font-medium text-gray-900 dark:text-white inline-block pt-5 sm:pl-10 ">Java</label>
-            <input id="disabled-range" type="range" value="78" min="0" max="100" class="w-56 lg:w-96 md:w-72 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 text-center ml-5" disabled>
+            <label for="Java" class="pl-3 text-sm mb-2 sm:text-xl  font-medium text-gray-900 dark:text-white inline-block pt-5 sm:pl-10 ">Java</label>
+            <input id="disabled-range" type="range" value="78" min="0" max="100" class="w-56  lg:w-96 md:w-72 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 text-center ml-5" disabled>
             <label for="java" class=" text-sm mb-2 sm:text-xl font-medium text-gray-900 dark:text-white inline pt-5 pl-5 ">78%</label><br>
     </div>
     </section>
     
      <!--Certificate Section-->
-    <section id="certificate" class="w-full h-max lg:h-screen bg-slate-600">
+    <section id="certificate" class="w-full h-max lg:h-screen bg-slate-600 ">
     
       <!--Certification Heading-->
-        <h1 class="font-bold text-3xl pt-20 lg:pt-14 text-center text-white">Certificate</h1>
+        <h1 class="font-bold text-3xl pt-20 lg:pt-16 text-center text-white">Certificate</h1>
     
-    <div class="gap-3 pb-5 pl-5 pt-8 pr-5 grid  lg:pt-10  lg:grid-cols-3">
+    <div class="gap-3 pb-5 pl-5 pt-8 pr-5 grid  lg:pt-4  lg:grid-cols-3">
     
         <!--Certification card 1-->
         <div class="min-h-[450px] lg:min-h-[450px] md:min-h-[350px] rounded-lg bg-slate-400 transition duration-500 hover:scale-95 ">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 ml-48 md:ml-[350px] lg:ml-52  mt-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 ml-40 md:ml-[350px] lg:ml-44  mt-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
               </svg>
               <h1 class="text-white text-center pt-2 font-bold text-3xl  ">Responsive Web Design</h1>
               <p class="text-center pt-3 md:pl-10 md:pr-10">As a seasoned web developer, I specialize in crafting responsive web designs that seamlessly adapt to diverse devices and screen sizes. My expertise lies in creating mobile-friendly, tablet-friendly, and desktop-friendly interfaces that ensure an optimal user experience. I skillfully employ CSS media queries, flexible grids, and images to ensure a fluid layout that adjusts to various resolutions.I strive to create digital experiences that engage, inspire, and convert.</p>
-              <a class="flex justify-center items-center" href="image/certificate.jpeg"><button class="rounded-lg border p-2 mt-8  border-blue-800 text-blue-800  font-bold hover:bg-blue-800 hover:text-white ">Read More</button></a>
+              <a class="flex justify-center items-center" href="image/certificate.jpeg"><button class="rounded-lg border p-2 mt-5 lg:mt-3 lg:mb-5 md:mt-8 border-blue-800 text-blue-800  font-bold hover:bg-blue-800 hover:text-white ">Read More</button></a>
               
         </div>
     
          <!--Certification card 2-->
         <div class="min-h-[450px] lg:min-h-[450px] md:min-h-[350px] rounded-lg bg-slate-400 transition duration-500 hover:scale-95 ">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 ml-48 md:ml-[350px] lg:ml-52  mt-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 ml-40 md:ml-[350px] lg:ml-44  mt-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" />
               </svg>
               <h1 class="text-white text-center pt-2 font-bold text-3xl ">Web Development</h1>
               <p class="text-center pt-3 md:pl-10 md:pr-10">As a highly skilled web developer, I excel in building dynamic, scalable, and maintainable web applications that meet the latest industry standards. With proficiency in HTML, CSS, JavaScript, and various frameworks such as React, Angular I craft solutions that are both visually appealing and technically sound. My expertise spans front-end development, back-end development,  ensuring a comprehensive approach to web development.</p>
-              <a class="flex justify-center items-center" href="image/certificate.jpeg"><button class="rounded-lg border  p-2 mt-8   border-blue-800 text-blue-800  font-bold hover:bg-blue-800 hover:text-white">Read More</button></a>
+              <a class="flex justify-center items-center" href="image/certificate.jpeg"><button class="rounded-lg border mt-5  p-2 lg:mt-3 lg:mb-5 md:mt-8  border-blue-800 text-blue-800  font-bold hover:bg-blue-800 hover:text-white">Read More</button></a>
         </div>
     
          <!--Certification card 3-->
         <div class="min-h-[450px] lg:min-h-[450px] md:min-h-[350px] rounded-lg bg-slate-400 transition duration-500 hover:scale-95  ">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 ml-48 lg:ml-52 md:ml-[350px]  mt-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 ml-40 lg:ml-48 md:ml-[350px]  mt-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
               </svg>
               <h1 class="text-white text-center pt-2 font-bold text-3xl ">Full Stack Development</h1>
               <p class="text-center pt-3 lg:tex md:pl-10 md:pr-10 ">As a versatile full stack developer, I seamlessly bridge the gap between front-end and back-end development, crafting comprehensive web solutions that exceed expectations. With a strong foundation in both client-side and server-side development, I expertly design, develop, and deploy dynamic web applications that are scalable, efficient, and user-friendly.I effectively integrate third-party APIs, libraries, and services to enhance functionality and performance.</p>
-              <a class="flex justify-center items-center" href="image/certificate.jpeg"><button class="rounded-lg border p-2 mt-8  border-blue-800 text-blue-800  font-bold hover:bg-blue-800 hover:text-white">Read More</button></a>
+              <a class="flex justify-center items-center" href="image/certificate.jpeg"><button class="rounded-lg border mt-5 p-2 lg:mt-3 lg:mb-5 md:mt-8 border-blue-800 text-blue-800  font-bold hover:bg-blue-800 hover:text-white">Read More</button></a>
         </div>
     </div>
     </section>
@@ -190,11 +196,11 @@
     <section id="project" class=" h-max w-full  bg-slate-700 ">
     
       <!--Project Heading-->
-        <h1 class="font-bold text-3xl pt-20 lg:pt-14 text-center text-white">Projects</h1>
+        <h1 class="font-bold text-3xl pt-20 lg:pt-16 text-center text-white">Projects</h1>
         <div class="grid  gap-1 lg:grid-cols-3 md:grid-cols-2 md:mr-4 ">
     
             <!--Project Card 1-->
-            <div class="lg:ml-10 ml-5 " >
+            <div class="lg:ml-7 ml-3 mr-3 md:ml-7" >
       <img class="w-96  pt-5 saturate-100 hover:saturate-200 " src="image/agency-landing-page-dark.jpg" alt="agency-landing-page-dark">
       <h2 class=" text-white text-xl ">Agency Landing Page</h2>
           <a class="font-semibold " href="https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=https://tailwindcss.com/&ved=2ahUKEwj35KHOqbaHAxUr2TgGHct2D9YQFnoECBIQAQ&usg=AOvVaw2vSN7AVcVeE7IjW449Pt1C">see project <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 inline">
@@ -203,7 +209,7 @@
     </div>
     
       <!--Project Card 2-->
-          <div class="ml-5 lg:ml-7">
+          <div class="ml-3 lg:ml-6 mr-3 md:ml-6">
           <img class="w-96  pt-5 saturate-100 hover:saturate-200" src="image/analytics-tool-dark.jpg" alt="analytics-tool-dark">
           <h2 class=" text-white text-xl  ">Analytics Tool</h2>
           <a class="font-semibold " href="https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=https://tailwindcss.com/&ved=2ahUKEwj35KHOqbaHAxUr2TgGHct2D9YQFnoECBIQAQ&usg=AOvVaw2vSN7AVcVeE7IjW449Pt1C">see project <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 inline">
@@ -212,7 +218,7 @@
         </div>
     
          <!--Project Card 3-->
-        <div class="ml-5">
+        <div class="ml-3 mr-3 lg:ml-6 md:ml-7">
           <img class="w-96 pt-5 saturate-100 hover:saturate-200" src="image/task-management-dark.jpg" alt="task-management-dark">
           <h2 class=" text-white text-xl  ">Task Management System</h2>
           <a class="font-semibold " href="https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=https://tailwindcss.com/&ved=2ahUKEwj35KHOqbaHAxUr2TgGHct2D9YQFnoECBIQAQ&usg=AOvVaw2vSN7AVcVeE7IjW449Pt1C">see project <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 inline">
@@ -221,7 +227,7 @@
         </div>
     
          <!--Project Card 4-->
-        <div class="pt-5 pb-5 lg:ml-10 ml-5">
+        <div class="pt-5 pb-5 lg:ml-7 ml-3 mr-3 md:ml-6">
             <img class="w-96 saturate-100 hover:saturate-200 " src="image/flowbite-dashboard-dark.jpg" alt="flowbite-dashboard-dark">
             <h2 class=" text-white text-xl  ">Flowbite's Dashboard</h2>
             <a class="font-semibold " href="https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=https://tailwindcss.com/&ved=2ahUKEwj35KHOqbaHAxUr2TgGHct2D9YQFnoECBIQAQ&usg=AOvVaw2vSN7AVcVeE7IjW449Pt1C">see project <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 inline">
@@ -230,7 +236,7 @@
           </div>
     
            <!--Project Card 5-->
-          <div class="pt-5 pb-3 ml-5 lg:ml-7">
+          <div class="pt-5 pb-3 ml-3 lg:ml-6 mr-3 md:ml-7">
             <img class="w-96 saturate-100 hover:saturate-200" src="image/landing-page-ngo-dark.jpg" alt="landing-page-ngo-dark">
             <h2 class=" text-white text-xl r "> NGO Landing Page</h2>
             <a class="font-semibold " href="https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=https://tailwindcss.com/&ved=2ahUKEwj35KHOqbaHAxUr2TgGHct2D9YQFnoECBIQAQ&usg=AOvVaw2vSN7AVcVeE7IjW449Pt1C">see project <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 inline">
@@ -239,7 +245,7 @@
           </div>
     
            <!--Project Card 6-->
-          <div class="pt-5 ml-5 pb-5">
+          <div class="pt-5 ml-3 pb-5 mr-3 lg:ml-6 md:ml-6">
             <img class="w-96 saturate-100 hover:saturate-200 " src="image/mail-management-system-dark.jpg" alt="mail-management-system-dark">
             <h2 class=" text-white text-xl  ">Main Management System</h2>
             <a class="font-semibold " href="https://www.google.co.in/url?sa=t&source=web&rct=j&opi=89978449&url=https://tailwindcss.com/&ved=2ahUKEwj35KHOqbaHAxUr2TgGHct2D9YQFnoECBIQAQ&usg=AOvVaw2vSN7AVcVeE7IjW449Pt1C">see project <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 inline">
@@ -250,10 +256,10 @@
     </section>
     
     <!--Contact Section-->
-    <section id="contact" class="w-full h-max lg:h-screen bg-slate-600">
+    <section id="contact" class="w-full h-max lg:h-screen bg-slate-600 ">
     
       <!--Contact Me Heading-->
-        <h1 class="font-bold text-3xl pt-20 lg:pt-16 text-center text-white">Contact Me</h1>
+        <h1 class="font-bold text-3xl pt-14 lg:pt-16 text-center text-white">Contact Me</h1>
         <form class="w-full max-w-lg m-auto ">
             <div class="flex flex-wrap -mx-3 mb-6">
     
@@ -279,14 +285,14 @@
     
                  <!--Textarea-->
                 <label for="textarea"></label>
-                <textarea id="textarea" name="textarea" class="resize-none ml-[120px] md:w-[300px] mt-1 lg:ml-3 lg:mt-0 m-auto rounded-lg w-[220px] h-[130px] lg:w-[510px] lg:h-[250px] bg-gray-200 border border-gray-200 appearance-none focus:bg-white focus-within:outline-none pl-3 pt-2" placeholder="Place your query "></textarea>
+                <textarea id="textarea" name="textarea" class="resize-none ml-[110px] md:w-[300px] md:ml-[118px] mt-1 lg:ml-3 lg:mt-0 m-auto rounded-lg w-[200px] h-[130px] lg:w-[510px] lg:h-[200px] bg-gray-200 border border-gray-200 appearance-none focus:bg-white focus-within:outline-none pl-3 pt-2" placeholder="Place your query "></textarea>
     
                 <!--Submit button-->
-                <button class="mt-10 mr-40 ml-48 lg:mt-5 bg-blue-600 hover:bg-blue-700 text-white font-bold md:ml-56 lg:m-auto p-2.5 rounded-full">Submit</button>
+                <button class="mt-10 mr-40 ml-44 lg:mt-5  bg-blue-600 hover:bg-blue-700 text-white font-bold md:ml-56 lg:m-auto p-2.5 rounded-full">Submit</button>
             </div>
     
             <!--Footer-->
-            <footer class="h-[80px] w-full mr-1 ml-36 m-auto lg:ml-48 md:ml-44">
+            <footer class="h-[70px] w-full mr-1 ml-32 m-auto lg:ml-48 md:ml-44 ">
     
                 <!--Mail-->
                <button class="rounded-full border-2  border-cyan-400 m-1 p-2 transition duration-500 hover:scale-110 hover:bg-cyan-400">
